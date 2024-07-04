@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+    background-image: url(../imgs/overloaded-cake-with-pink-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+Header {
+    padding: 20px 0px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .brand {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    color: rgb(0, 0, 0);
+    min-width: 80px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul#user_info {
+    display: none;
+}
+
+/* FORM */
+
+.section {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+
+.form-elements {
+    border: 2px solid white;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+
+}
+
+.section .Header {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    /* color: white; */
+}
+
+.section form {
+    display: grid;
+    padding: 90px;
+}
+
+
+.section form .inputs {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.section form .inputs i {
+    font-size: 1.25rem;
+}
+
+.section form i {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    z-index: 1;
+    margin-left: 60px;
+    color: black;
+
+}
+
+.section form label {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.section form input {
+    width: 100%;
+    padding-block: .8rem;
+    background: none;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+
+.section form input[type="submit"] {
+    padding: 5px 50px;
+    background-color: #281236;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.section form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+form p {
+    color: white;
+}
+
+.products {
+    width: 50%;
+    margin: 50px 0;
+}
+
+.product-item {
+    display: flex;
+    width: 100%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+.product-item img {
+    height: 170px;
+    width: 25%;
+    margin-right: 50px;
+}
+
+.product-item-action {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.product-item .add-to-cart {
+    display: block;
+    margin-left: auto;
+    background-color: #6A4654;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.product-item .fav {
+    cursor: pointer;
+    font-size: 22px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.poduct-item-desc {
+    margin-top: 20px;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul#user_info li i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+nav ul#user_info li {
+    margin-left: 50px;
+
+}
+
+nav li.shopping-cart {
+    text-align: center;
+}
+
+nav ul#user_info li .badge {
+    display: none;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: red;
+    color: white;
+    top: 0px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2px 0px 0px 26px;
+
+}
+
+.carts-products {
+    position: absolute;
+    display: none;
+    width: 200px;
+    transform: translate(-40%, 0);
+    margin: 10px auto;
+    background-color: #471725;
+
+
+}
+
+.carts-products a {
+
+    margin: 10px;
+    background-color: #eaeaea;
+    color: #000000;
+}
+
+.carts-products a:hover {
+    color: #000000;
+}
